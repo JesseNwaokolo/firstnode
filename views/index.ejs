@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="/submit">
+        <p> <%= locals.hero ? hero : "click to get your hero name" %></p>
+
+        <input type="submit" value="get super hero name">
+    </form>
+
+
+    <form action="/post" method="post">
+        <input type="text" class="input" name="heroname">
+        <input type="submit" value="post new name">
+    </form>
+</body>
+</html>
